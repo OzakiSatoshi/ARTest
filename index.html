@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>ぽんこつ社長のWebAR</title>
     <style>
       .wrapper {
@@ -18,23 +19,21 @@
   <body>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <div class="wrapper">
-    
-     <model-viewer  
-    ar
-    alt="ぽんこつ社長"
-    src="ponkotsu.glb" 
-    ios-src="ponkotsu.usdz" 
-    style="width:800px;height:1000px;"                  
-                  
-                  background-color="#70BCD1"
-                  shadow-intensity="0.7"
-                  camera-controls
-                  interaction-prompt="auto"
-                  auto-rotate ar magic-leap>
-                  
-    
-    </model-viewer>
-　　</div>
-
+      <model-viewer
+        class="ar-model" 
+        ar
+        alt="ぽんこつ社長"
+        src="ponkotsu.glb" 
+        ios-src="ponkotsu.usdz"
+        background-color="#70BCD1"
+        shadow-intensity="0.7"
+        camera-controls
+        interaction-prompt="auto"
+        auto-rotate
+        ar
+        magic-leap>
+      </model-viewer>
+    </div>
   </body>
 </html>
+</html> 
